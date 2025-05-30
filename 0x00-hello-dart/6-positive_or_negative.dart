@@ -1,10 +1,10 @@
 void main(List<String> arguments) {
-    String nombre = arguments[0].toString();
-    if (int.parse(nombre) > 0) {
-        print("$nombre is positive");
-    } else if (int.parse(nombre) < 0) {
-        print("$nombre is negative");
+    String numbre = arguments[0].toString();
+    if (int.parse(numbre) > 0) {
+        print("$numbre is positive");
+    } else if (int.parse(numbre) < 0) {
+        print("$numbre is negative");
     } else {
-        print("$nombre is zero");
+        print("$numbre is zero");
     }
 }
