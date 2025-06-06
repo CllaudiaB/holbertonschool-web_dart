@@ -1,11 +1,15 @@
 void outer(String name, String id) {
-
-    String inner() {
-        var parts = name.split(" ");
-        var lastName = parts[1][0];
-        var firstName = parts[0];
-        return "Hello Agent " + lastName + "." + firstName + ", your id is " + id;
+  String inner() {
+    var parts = name.split(" ");
+    if (parts.length < 2) {
+      return "Invalid name format. Please provide both first and last name.";
     }
 
-    print(inner());
+    var firstName = parts[0];
+    var lastNameInitial = parts[1].isNotEmpty ? parts[1][0] : "";
+
+    return "Hello Agent $lastNameInitial.$firstName, your id is $id";
+  }
+
+  print(inner());
 }
