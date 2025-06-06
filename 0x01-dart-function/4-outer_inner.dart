@@ -8,7 +8,7 @@ void outer(String name, String id) {
     var firstName = parts[0];
     var lastNameInitial = parts[1].isNotEmpty ? parts[1][0] : "";
 
-    return "Hello Agent $lastNameInitial.$firstName, your id is $id";
+    return "Hello Agent $lastNameInitial.$firstName your id is $id";
   }
 
   print(inner());
