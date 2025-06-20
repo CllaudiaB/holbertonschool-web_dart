@@ -1,7 +1,7 @@
-class User {  
-   String name = "";  
-   
-   String showName() { 
-      return ("Hello, $name"); 
-   } 
+class User {
+  String name = "";
+
+  String showName(){
+    return "Hello ${name}";
+  }
 }
